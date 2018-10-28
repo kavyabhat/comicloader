@@ -1,11 +1,8 @@
-package com.kvb.xkcd_comicaday;
-
-import java.io.IOException;
+package com.kvb.xkcd_comicaday.network;
 
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.Response;
 
 public class ComicRetrofit {
     public void fetchComic(String url, Callback callback){

@@ -1,5 +1,5 @@
 
-package com.kvb.xkcd_comicaday;
+package com.kvb.xkcd_comicaday.model;
 
 import com.google.gson.annotations.SerializedName;
 

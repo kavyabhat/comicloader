@@ -1,8 +1,4 @@
-package com.kvb.xkcd_comicaday;
-
-/**
- * Created by kavya.bhat on 16/06/18.
- */
+package com.kvb.xkcd_comicaday.utils;
 
 public class ComicConstants {
     public static final String ARG_SECTION_NUMBER = "section_number";

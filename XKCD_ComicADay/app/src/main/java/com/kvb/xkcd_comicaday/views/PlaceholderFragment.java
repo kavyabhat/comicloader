@@ -1,24 +1,5 @@
-package com.kvb.xkcd_comicaday;
+package com.kvb.xkcd_comicaday.views;
 
-/*
- * Copyright (c) 2015 Samsung Electronics. All Rights Reserved
- *
- * PROPRIETARY/CONFIDENTIAL
- *
- * This software is the confidential and proprietary information of
- * SAMSUNG ELECTRONICS ("Confidential Information").
- * You shall not disclose such Confidential Information and shall
- * use it only in accordance with the terms of the license agreement
- * you entered into with SAMSUNG ELECTRONICS. SAMSUNG make no
- * representations or warranties about the suitability
- * of the software, either express or implied, including but not
- * limited to the implied warranties of merchantability, fitness for a
- * particular purpose, or non-infringement. SAMSUNG shall not be liable
- * for any damages suffered by licensee as a result of using, modifying
- * or distributing this software or its derivatives.
- */
-
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -31,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.kvb.xkcd_comicaday.R;
+import com.kvb.xkcd_comicaday.model.ComicOfDayBean;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -40,12 +23,12 @@ import okhttp3.Callback;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-import static com.kvb.xkcd_comicaday.ComicConstants.ARG_COMIC_COUNT;
-import static com.kvb.xkcd_comicaday.ComicConstants.ARG_COMIC_LATEST_NUM;
-import static com.kvb.xkcd_comicaday.ComicConstants.ARG_SECTION_NUMBER;
-import static com.kvb.xkcd_comicaday.ComicConstants.URL_COMIC_OF_DAY;
-import static com.kvb.xkcd_comicaday.ComicConstants.URL_COMIC_OF_SPECIFIC_DAY_BASE;
-import static com.kvb.xkcd_comicaday.ComicConstants.URL_COMIC_OF_SPECIFIC_DAY_RELATIVE;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.ARG_COMIC_COUNT;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.ARG_COMIC_LATEST_NUM;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.ARG_SECTION_NUMBER;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.URL_COMIC_OF_DAY;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.URL_COMIC_OF_SPECIFIC_DAY_BASE;
+import static com.kvb.xkcd_comicaday.utils.ComicConstants.URL_COMIC_OF_SPECIFIC_DAY_RELATIVE;
 
 /**
  * A placeholder fragment containing a simple view.

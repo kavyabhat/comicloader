@@ -1,4 +1,4 @@
-package com.kvb.xkcd_comicaday;
+package com.kvb.xkcd_comicaday.views;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
